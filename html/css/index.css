@@ -1,23 +1,29 @@
 
+body {
+    background-image: url("https://media.wired.com/photos/5a593a7ff11e325008172bc2/master/w_2400,c_limit/pulsar-831502910.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+ }
+
 .large-header {
     position: relative;
     width: 100%;
-    background: #111;
+    
     overflow: hidden;
-    background-size: cover;
+    background-size: 100%;
     background-position: center center;
     z-index: 1;
  }
  
  .demo .large-header {
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
+    background-image: url("http://www.pngmart.com/files/5/Snow-PNG-Transparent-Image.png");
  }
  
  .main-title {
     position: absolute;
     margin: 0;
     padding: 0;
-    color: #F9F1E9;
+    color: rgb(98, 196, 155);
     text-align: center;
     top: 50%;
     left: 50%;
