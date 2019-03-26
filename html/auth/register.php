@@ -15,14 +15,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         // prepare sql query
         $sql = "SELECT id FROM users WHERE username = ?";
         if($stmt = mysqli_prepare($link, $sql)){
-            // bind username to stmt. 
+            // bind username to statement. 
             mysqli_stmt_bind_param($stmt, "s", $param_username);
             $param_username = trim($_POST["username"]);
             
             // execute statement and gather output
             if(mysqli_stmt_execute($stmt)){
                 mysqli_stmt_store_result($stmt);
-                
                 // if more than 0 results, let the user know the name is taken, otherwise, set the username variable
                 if(mysqli_stmt_num_rows($stmt) >= 1){
                     $username_err = "This username is already taken.";
@@ -93,27 +92,26 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </head>
 <body>
   <h2>Sign Up</h2>
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-      <div>
-        <label>Username</label>
-        <input type="text" name="username" value="<?php echo $username; ?>">
-        <span><?php echo $username_err; ?></span>
-      </div>    
-      <div>
-        <label>Password</label>
-        <input type="password" name="password" value="<?php echo $password; ?>">
-        <span><?php echo $password_err; ?></span>
-      </div>
-      <div>
-        <label>Confirm Password</label>
-        <input type="password" name="confirm_password" value="<?php echo $confirm_password; ?>">
-        <span><?php echo $confirm_password_err; ?></span>
-      </div>
-      <div>
-        <input type="submit" value="Submit">
-      </div>
-      <p>Already have an account? <a href="auth/login.php">Login here.</a></p>
-    </form>
-  </div>
+  <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+    <div>
+      <label>Username</label>
+      <input type="text" name="username" value="<?php echo $username; ?>"
+      <span><?php echo $username_err; ?></span>
+    </div>    
+    <div>
+      <label>Password</label>
+      <input type="password" name="password" value="<?php echo $password; ?>">
+      <span><?php echo $password_err; ?></span>
+    </div>
+    <div>
+      <label>Confirm Password</label>
+      <input type="password" name="confirm_password" value="<?php echo $confirm_password; ?>">
+      <span><?php echo $confirm_password_err; ?></span>
+    </div>
+    <div>
+      <input type="submit" value="Submit">
+    </div>
+    <p>Already have an account? <a href="auth/login.php">Login here.</a></p>
+  </form>
 </body>
 </html>
