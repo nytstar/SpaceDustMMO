@@ -1,19 +1,8 @@
 <?php
- session_start()
+
+require "../includes/header.php";
+
 ?>
-<!DOCTYPE html>
-<html>
-
-<head>
-
-        
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        
-
-</head>
-
-<body>
-
 
        
         <div class="some-space">
@@ -40,5 +29,8 @@
      
      
 
-</body>
-</html>
+<?php
+
+require "../includes/header.php";
+
+?>
