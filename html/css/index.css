@@ -1,6 +1,6 @@
 
 body {
-    background-image: url("https://media.wired.com/photos/5a593a7ff11e325008172bc2/master/w_2400,c_limit/pulsar-831502910.jpg");
+    
     background-repeat: no-repeat;
     background-size: 100% 100%;
  }
@@ -15,9 +15,7 @@ body {
     z-index: 1;
  }
  
- .demo .large-header {
-    background-image: url("http://www.pngmart.com/files/5/Snow-PNG-Transparent-Image.png");
- }
+ 
  
  .main-title {
     position: absolute;
