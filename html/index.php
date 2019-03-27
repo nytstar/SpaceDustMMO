@@ -23,7 +23,7 @@
                             
                            <div id="large-header" class="large-header">
                               <canvas id="demo-canvas"></canvas>
-                              <h1 class="main-title"><span class="thin">Space-Dust</span><span class="thin"><br> Coming Soon</span></h1>
+                              <p class='pulsing-text'>Space-Dust</p><br><p class='pulsing-text'> Coming Soon</p>
                               <br>
                            
                            </div>
