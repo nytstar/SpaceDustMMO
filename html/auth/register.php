@@ -40,7 +40,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
     
     // check 1st password field: it should not be empty, it should be a string, and it should at least 7 characters.
-    if(empty(trim($_POST["password"])) || !is_string($_POST["password"]){
+    if(empty(trim($_POST["password"])) || !is_string($_POST["password"])){
         $password_err = "Please enter a password.";     
     } elseif(strlen(trim($_POST["password"])) < 7){
         $password_err = "Password must have atleast 7 characters.";
