@@ -1,6 +1,6 @@
 <?php
 // Include config file
-require_once "../includes/mysql-setup.php";
+require_once "../includes/mysql_setup.php";
  
 // Define variables and initialize with empty values
 $username = $password = $confirm_password = "";
