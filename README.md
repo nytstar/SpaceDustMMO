@@ -1,4 +1,2 @@
 SpaceDustMMO
-GitflowTest
-ReleaseTest
-hotfixtest
+Test
