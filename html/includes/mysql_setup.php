@@ -2,7 +2,7 @@
  // Database credentials 
  define('DB_SERVER', 'localhost');
  define('DB_USERNAME', 'u480593864_space');
- define('DB_PASSWORD', 'KuuW`;343ly[bSbe0*');
+ define('DB_PASSWORD', '');
  define('DB_NAME', 'u480593864_space');
  
  // connect to database
