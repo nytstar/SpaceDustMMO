@@ -1,6 +1,6 @@
 <?php
 
-require "../includes/header.php";
+require "includes/header.php";
 
 ?>
 
@@ -28,9 +28,8 @@ require "../includes/header.php";
      <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
      
      
-
 <?php
 
-require "../includes/header.php";
+require "includes/footer.php"
 
 ?>
