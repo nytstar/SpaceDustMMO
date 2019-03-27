@@ -71,7 +71,7 @@ mysqli_close($link);
                 <input type="password" name="password">
             </div>
             <div>
-                <input type="submit">
+                <input type="submit" value="Login">
             </div>
             </div>
                 <span><?php echo $auth_err; ?></span>
