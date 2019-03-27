@@ -1,6 +1,6 @@
 <?php
 // Include config file
-require_once "../includes/mysql_setup.php";
+require_once "../includes/mysql-setup.php";
  
 // Define variables and initialize with empty values
 $username = $password = $confirm_password = "";
@@ -11,8 +11,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // check username: it should not be empty, it should be a string, and it should not be taken.
     if(empty(trim($_POST["username"])) || !is_string($_POST["username"])){
         $username_err = "Please enter a username.";
-    } elseif(!preg_match("/[A-Za-z0-9_]/", $username)){
-        $username_err = "Username must only contain letters, numbers and underscores.";
     } else{
         // prepare sql query
         $sql = "SELECT id FROM users WHERE username = ?";
