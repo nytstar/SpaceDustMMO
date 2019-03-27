@@ -1,5 +1,5 @@
 <?php 
-require_once "../mysql_setup.php";
+require_once "../includes/mysql_setup.php";
 
 // begin session if it isn't started already
 session_start();
