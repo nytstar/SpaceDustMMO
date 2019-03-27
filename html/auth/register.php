@@ -1,6 +1,6 @@
 <?php
 // Include config file
-require_once "../includes/mysql-setup.php";
+require_once "../includes/mysql_setup.php";
  
 // Define variables and initialize with empty values
 $username = $password = $confirm_password = "";
@@ -95,7 +95,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
     <div>
       <label>Username</label>
-      <input type="text" name="username" value="<?php echo $username; ?>"
+      <input type="text" name="username" value="<?php echo $username; ?>">
       <span><?php echo $username_err; ?></span>
     </div>    
     <div>
