@@ -11,6 +11,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // check username: it should not be empty, it should be a string, and it should not be taken.
     if(empty(trim($_POST["username"])) || !is_string($_POST["username"])){
         $username_err = "Please enter a username.";
+    } elseif(!preg_match("/[A-Za-z0-9_]/", trim($_POST["username"]))){
+        $username_err = "Username must only contain numbers, letters, and underscores";
     } else{
         // prepare sql query
         $sql = "SELECT id FROM users WHERE username = ?";
@@ -38,7 +40,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
     
     // check 1st password field: it should not be empty, it should be a string, and it should at least 7 characters.
-    if(empty(trim($_POST["password"])) || !is_string($_POST["password"]){
+    if(empty(trim($_POST["password"])) || !is_string($_POST["password"])){
         $password_err = "Please enter a password.";     
     } elseif(strlen(trim($_POST["password"])) < 7){
         $password_err = "Password must have atleast 7 characters.";
