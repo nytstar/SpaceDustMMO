@@ -1,4 +1,6 @@
-
+#login-content {
+  display: none;
+}
 body {
     background-image: url("https://media.wired.com/photos/5a593a7ff11e325008172bc2/master/w_2400,c_limit/pulsar-831502910.jpg");
     background-repeat: no-repeat;
@@ -130,13 +132,6 @@ body {
     align-content: center;
     align-items: center;
   }
-  
-#login-content {
-  display: none;
-}
-
-
-
  @media only screen and (max-width: 768px) {
     .demo .main-title {
        font-size: 3em;
