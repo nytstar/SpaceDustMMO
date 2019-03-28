@@ -44,16 +44,31 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
         // close statement
         mysqli_stmt_close($stmt);
     }
+<<<<<<< HEAD
+=======
+
+    // easter egg because i'm bored
+    if ($_POST["potato"] == true) {
+        $potato = "i like potatoes too";
+    }
+>>>>>>> develop
 }
 // close connection to db
 mysqli_close($link);
 ?>
 
 <!DOCTYPE html>
+<<<<<<< HEAD
 <span><?php echo (isset($_SESSION["logged_in"]) ? 'You are logged in' : 'You are not logged in'); ?></span>
 <html lang="en">
     <head>
         <title>Login</title>
+=======
+<span><?php echo ($_SESSION["logged_in"] ? 'You are logged in' : 'You are not logged in'); ?></span>
+<html lang="en">
+    <head>
+        <title><?php echo (isset($potato) ? $potato : 'login'); ?></title>
+>>>>>>> develop
     </head>
     <body>
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
