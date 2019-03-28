@@ -131,7 +131,9 @@ body {
     align-items: center;
   }
   
-
+nav #login-content {
+  display: none;
+}
 
 
 
