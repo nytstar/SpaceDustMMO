@@ -1,0 +1,37 @@
+p {
+    font-size: 4em;
+    text-align: center;
+    color: #485460;
+    text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.2);
+    font-family: 'Supermercado One', cursive;
+    animation-name: pulsing-text;
+    animation-duration: 14s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  @keyframes pulsing-text {
+    0% {
+      color: #1e272e;
+      text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.1);
+    }
+    25% {
+      color: #808e9b;
+    }
+    35% {
+      color: #d2dae2;
+    }
+    50% {
+      color: #f1f2f6;
+      text-shadow: 3px 3px 30px rgba(255, 255, 255, 0.7);
+    }
+    65% {
+      color: #d2dae2;
+    }
+    80% {
+      color: #808e9b;
+    }
+    100% {
+      color: #1e272e;
+      text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.1);
+    }
+  }
